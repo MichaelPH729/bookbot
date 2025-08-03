@@ -16,4 +16,5 @@ def dict_to_sorted_list(dict):
     extracted_dict_list = []
     for char in dict:
         extracted_dict_list.append({"char" : char, "num": dict[char]})
+    extracted_dict_list.sort(reverse=True, key=extract_count)
     return extracted_dict_list
