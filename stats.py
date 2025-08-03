@@ -9,3 +9,11 @@ def character_count(text):
         else:
             character_dictionary[char.lower()] = 1
     return character_dictionary
+
+def dict_to_sorted_list(dict):
+    def extract_count(char):
+        return char["num"]
+    extracted_dict_list = []
+    for char in dict:
+        extracted_dict_list.append({"char" : char, "num": dict[char]})
+    return extracted_dict_list
